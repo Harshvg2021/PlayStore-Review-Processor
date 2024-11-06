@@ -103,3 +103,9 @@ The backend server should now be running on http://localhost:5000
     ```
 
     You can now access the frontend running on http://localhost:5000
+
+## Resources Used
+
+- **Scrapping**: npmjs.com , google-play-scraper library 
+- **LLM Classification**: [Medium Blog](https://medium.com/@mjdrehman/add-ai-in-your-web-app-in-10-minutes-a-quick-guide-8c26086b0d7d), npmjs.com, @xenova/transformers library 
+- **Styling/CSS for Frontend**:  ChatGPT
