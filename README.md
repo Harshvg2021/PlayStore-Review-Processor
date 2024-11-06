@@ -1,4 +1,5 @@
 # PlayStore-Review-Processor
+![image](https://github.com/user-attachments/assets/2ae7b497-2357-41dd-aee5-e878e9c3c6d3)
 
 A web application for searching and displaying reviews based on date and category. This application scrapes and categorizes reviews from the Google Play Store, allowing users to search reviews by selecting a date within the past 7 days and filtering by categories such as Bugs, Complaints, Crashes, Praises, and Others.
 
