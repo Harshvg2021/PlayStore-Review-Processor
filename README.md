@@ -133,4 +133,4 @@ Assumptions : 100000+ records, Daily users > 300
 
 - **Scrapping**: npmjs.com , google-play-scraper library 
 - **LLM Classification**: [Medium Blog](https://medium.com/@mjdrehman/add-ai-in-your-web-app-in-10-minutes-a-quick-guide-8c26086b0d7d), npmjs.com, @xenova/transformers library 
-- **Styling/CSS for Frontend**:  ChatGPT
+- **Styling/CSS help for Frontend**:  ChatGPT
