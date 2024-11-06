@@ -15,7 +15,7 @@ A web application for searching and displaying reviews based on date and categor
 
 ## Live Demo
 
-(Please Note that the backend deployed server shuts down due to inactivity due to being a free teir service, Please give it a few moments to load that data ) 
+(Please Note that the backend deployed server shuts down due to inactivity due to being a free teir service, Please give it a few moments to load the data , in the frist request ) 
 
 (Please Note : Data is available from November 3rd, 2024 onwards )
 
