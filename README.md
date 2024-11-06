@@ -17,7 +17,7 @@ A web application for searching and displaying reviews based on date and categor
 
 (Please Note that the backend deployed server shuts down due to inactivity due to being a free teir service, Please give it a few moments to load that data ) 
 
-(Please Note : Data is available from Octorber 7th 2024 onwards )
+(Please Note : Data is available from November 3rd, 2024 onwards )
 
 You can access the deployed version of this application here: [Live Demo Link](https://play-store-review-processor.vercel.app/)
 
