@@ -8,7 +8,7 @@ const App = () => {
 
   const handleSearch = async (date, category) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/reviews/search`, {
+      const response = await axios.get(`https://review-processor-backend.onrender.com/api/reviews/search`, {
         params: { date, category }
       });
       setReviewData(response.data);
