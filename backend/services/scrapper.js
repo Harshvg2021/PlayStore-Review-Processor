@@ -59,29 +59,7 @@ async function scrapeAndSaveReviews(appId = 'com.superplaystudios.dicedreams', l
     }
 }
 
-async function getReviewsFromDB(startDate, endDate, category = null) {
-    try {
-        const query = {
-            date: {
-                $gte: startDate,
-                $lte: endDate
-            }
-        };
-
-        if (category) {
-            query.category = category;
-        }
-
-        const reviews = await Review.find(query).sort({ date: -1 });
-        return reviews;
-    } catch (error) {
-        console.error('Error fetching reviews from DB:', error);
-        throw error;
-    }
-}
-
 export {
     scrapeAndSaveReviews,
-    getReviewsFromDB,
     isWithinLast7Days
 };
