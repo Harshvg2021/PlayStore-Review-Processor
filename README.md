@@ -104,6 +104,25 @@ The backend server should now be running on http://localhost:5000
 
     You can now access the frontend running on http://localhost:5000
 
+
+## Cost Eastimation
+### Frontend
+-**vercel pro 20$ /pm**
+
+Assumptions : 10000 + visitors
+
+### Backend
+-**render pro 7$ /pm**
+
+Assumptions : Daily APi calls  >50000 , concurrent user  > 200
+### Database
+-**MongoDB M0 cluster 9$ /pm**
+
+Assumptions : 100000+ records, Daily users > 300
+
+### Total Cost = 35$ per month with the above assumption
+
+
 ## Resources Used
 
 - **Scrapping**: npmjs.com , google-play-scraper library 
