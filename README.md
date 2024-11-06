@@ -46,3 +46,60 @@ You can access the deployed version of this application here: [Live Demo Link](h
       "to": "2024-11-05"
     }
   }
+
+## Running Locally
+
+### Prerequisites
+
+- **Node.js** (version >= 14)
+- **MongoDB** (local or cloud instance)
+
+### Steps
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/<YOUR_USERNAME>/PlayStore-Review-Processor.git
+   cd PlayStore-Review-Processor.git
+   ```
+
+2. **Start the Backend**
+
+    navgiate to backend folder
+    ```bash
+    cd backend 
+    ```
+
+    Install dependencies
+    ```bash
+    npm install
+    ```
+    Create a .env file in the backend folder with the following content:
+    ```bash
+    PORT=5000 
+    MONGODB_URI=your_mongodb_connection_string
+    ```
+    Start the backend server:
+    ```bash
+    nodemon app.js
+    ```
+
+The backend server should now be running on http://localhost:5000
+
+3. **Start Frontend**
+
+    navgiate to frontend folder
+    ```bash
+    cd frontend 
+    ```
+
+    Install dependencies
+    ```bash
+    npm install
+    ```
+
+    Start the frontend:
+    ```bash
+    npm start
+    ```
+
+    You can now access the frontend running on http://localhost:5000
