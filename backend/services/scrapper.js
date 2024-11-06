@@ -2,7 +2,6 @@ import gplay from "google-play-scraper";
 import Review from '../models/Review.js';
 import { classifyReview } from "./reviewService.js";
 
-// Helper function to check if date is within last 7 days
 function isWithinLast7Days(date) {
     const reviewDate = new Date(date);
     const today = new Date();
@@ -11,7 +10,6 @@ function isWithinLast7Days(date) {
     return reviewDate >= sevenDaysAgo && reviewDate <= today;
 }
 
-// Function to scrape and save reviews
 async function scrapeAndSaveReviews(appId = 'com.superplaystudios.dicedreams', limit = 200) {
     try {
         console.log("Starting review scraping...");
@@ -28,14 +26,12 @@ async function scrapeAndSaveReviews(appId = 'com.superplaystudios.dicedreams', l
 
         for (const reviewData of reviews.data) {
             if (isWithinLast7Days(reviewData.date)) {
-                // Check for existing review
                 const existingReview = await Review.findOne({
                     content: reviewData.text,
                     date: new Date(reviewData.date).toISOString().split('T')[0]
                 });
 
                 if (!existingReview) {
-                    // Classify the review
                     const category = await classifyReview(reviewData.text);
 
                     const review = new Review({
@@ -63,7 +59,6 @@ async function scrapeAndSaveReviews(appId = 'com.superplaystudios.dicedreams', l
     }
 }
 
-// Function to get reviews from database with filters
 async function getReviewsFromDB(startDate, endDate, category = null) {
     try {
         const query = {
