@@ -68,7 +68,7 @@ You can access the deployed version of this application here: [Live Demo Link](h
    cd PlayStore-Review-Processor.git
    ```
 
-2. **Start the Backend**
+2. **Start the Backend (OPTION 1)**
 
     navgiate to backend folder
     ```bash
@@ -87,6 +87,30 @@ You can access the deployed version of this application here: [Live Demo Link](h
     Start the backend server:
     ```bash
     nodemon app.js
+    ```
+
+The backend server should now be running on http://localhost:5000
+
+
+3.  **Start the Backend (OPTION 2)**
+
+    navgiate to backend folder
+    ```bash
+    cd backend 
+    ```
+
+    Pull the Docker image
+    ```bash
+    docker pull harshvg2021/review-processor:latest
+    ```
+    Create a .env file in the backend folder with the following content:
+    ```bash
+    PORT=5000 
+    MONGODB_URI=your_mongodb_connection_string
+    ```
+    Run the container:
+    ```bash
+    docker run -p 5000:5000 --env-file .env harshvg2021/review-processor:latest
     ```
 
 The backend server should now be running on http://localhost:5000
