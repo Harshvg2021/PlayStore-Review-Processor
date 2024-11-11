@@ -108,7 +108,7 @@ The backend server should now be running on http://localhost:5000
     npm start
     ```
 
-    You can now access the frontend running on http://localhost:5000
+    You can now access the frontend running on http://localhost:3000
 
 
 ## Cost Eastimation
